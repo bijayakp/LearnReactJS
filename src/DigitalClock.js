@@ -6,6 +6,7 @@ class DigitalClock extends React.Component {
         this.state = {
             currentDate : new Date()
         }
+        this.MountClock();
     }
 
    
@@ -25,11 +26,9 @@ class DigitalClock extends React.Component {
         return(
             <>
                 <h2>Digital Clock</h2>
-                <div class="date-time">
-                    Current Time: <span>{this.state.currentDate.toLocaleTimeString()}</span>
+                <div className="clock-face">
+                    {this.state.currentDate.toLocaleString()}
                 </div>
-                <button onClick={this.MountClock} >Start Clock</button>
-                <button onClick={this.UnmountClock} >End Clock</button>
             </>
         )
     }
