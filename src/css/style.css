@@ -1,3 +1,16 @@
 body{
-    
+
+}
+
+.digitalClock-Title
+{
+    text-align: center;
+}
+
+.digitalClock-Clock
+{
+    text-align: center;
+    font-size: 5em;
+    background-color: aqua;
+    border-radius: 2em;
 }
